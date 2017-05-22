@@ -4,6 +4,14 @@
    font-size-adjust: 2;
 }
 
+a:visited {
+	color: Red;
+}
+
+a:hover {
+	color: Yellow;
+}
+
 h1 {
 	color: DodgerBlue;
 	font-size: 32px;
