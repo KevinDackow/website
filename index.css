@@ -15,5 +15,6 @@ p, ol {
 
 body {
 	background: linear-gradient(to bottom right, DarkBlue, Indigo);
+	background-size: cover;
 }
 
