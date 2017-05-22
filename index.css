@@ -1,1 +1,19 @@
+* {
+	box-sizing: border-box;
+}
 
+h1 {
+  color: Purple;  
+  font-size: 80px;
+}
+
+p {
+  color: Blue;
+  font-family: Veranda;
+    font-size: 32px;
+}
+
+ol {
+  color: Orange;
+      font-size: 30px;
+}
