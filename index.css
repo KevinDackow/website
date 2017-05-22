@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: Verdana;
 }
 
 h1 {
@@ -9,12 +10,11 @@ h1 {
 
 p, ol {
 	color: White;
-	font-family: Verdana;
 	font-size: 16px;
 }
 
 body {
-	background: linear-gradient(to bottom right, DarkBlue, Indigo);
+	background-image: linear-gradient(to bottom right, DarkBlue, Indigo);
 	background-size: cover;
 }
 
