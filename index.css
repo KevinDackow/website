@@ -1,7 +1,11 @@
 * {
 	box-sizing: border-box;
 	font-family: "MS Sans Serif",Geneva,sans-serif;
-   font-size-adjust: 2;
+   	font-size-adjust: 2;
+}
+
+a {
+	color: DodgerBlue;
 }
 
 a:visited {
@@ -15,9 +19,9 @@ a:hover {
 h1 {
 	color: DodgerBlue;
 	font-size: 32px;
-   font-variant: small-caps;
-   border-bottom: double;
-   border-bottom-width: medium;
+   	font-variant: small-caps;
+  	border-bottom: double;
+   	border-bottom-width: medium;
 }
 
 h2 {
