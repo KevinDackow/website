@@ -14,10 +14,6 @@ p, ol {
 }
 
 body {
-	background-image: url("http://www.bestwesternjacksonvillebeach.com/photogallery/large/hotel/best-western-oceanfront-surfing-at-sunrise-jacksonville-beach-florida.jpg");
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-color: Blue;
+	background: linear-gradient(red, yellow);
 }
 
