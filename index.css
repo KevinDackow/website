@@ -1,20 +1,64 @@
 * {
 	box-sizing: border-box;
-	font-family: Arial;
+	font-family: "MS Sans Serif",Geneva,sans-serif;
+   font-size-adjust: 2;
 }
 
 h1 {
-	color: LawnGreen;  
+	color: DodgerBlue;
 	font-size: 32px;
+   font-variant: small-caps;
+   border-bottom: double;
+   border-bottom-width: medium;
 }
 
-p, ol {
+h2 {
+   color: DodgerBlue;
+   font-size: 24px;
+   font-variant: small-caps;
+   border-bottom: solid;
+   border-bottom-width: thin;
+}
+
+.menuBar ul {
+   background-attachment: fixed;
+   background-position: top center;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+
+}
+
+.menuBar ul li {
+   display: inline;
+}
+
+.menuBar ul li a {
+   float: left;
+   display: block;
+   border-right: 1px solid White ;
+   padding: 12px;
+   background-color: Grey;
+   color: White;
+   width: 80px;
+   text-align: center;
+}
+
+
+
+.menuBar ul li a:hover {
+   background-color: DarkGrey;
+}
+
+p {
 	color: White;
 	font-size: 16px;
 }
 
 body {
-	background-image: linear-gradient(to bottom right, DarkBlue, Indigo);
+   border-bottom-color: linear-gradient(to bottom, DarkBlue, BlueViolet);
+	background-color: DarkBlue;
 	background-size: cover;
 }
 
