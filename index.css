@@ -1,4 +1,7 @@
 * {
+	background-image: url("http://www.browndailyherald.com/wp-content/uploads/2016/11/Renken_Lawsuit_CO_BrownUniversity.jpg");
+	background-size: cover;
+	background-attachment: fixed;
 	box-sizing: border-box;
 	font-family: "MS Sans Serif",Geneva,sans-serif;
    	font-size-adjust: 2;
@@ -73,8 +76,6 @@ p {
 }
 
 body {
-   border-bottom-color: linear-gradient(to bottom, DarkBlue, BlueViolet);
-	background-color: DarkBlue;
-	background-size: cover;
+	background-color: transparent;
 }
 
