@@ -3,13 +3,18 @@
 }
 
 h1 {
-  color: Purple;  
-  font-size: 32px;
+	color: Purple;  
+	font-size: 32px;
 }
 
 p, ol {
-  color: Blue;
-  font-family: Veranda;
-    font-size: 16px;
+	color: Blue;
+	font-family: Veranda;
+	font-size: 16px;
+}
+
+body {
+	background-image: url("http://wallpaper-gallery.net/images/backgrounds/backgrounds-22.jpg");
+	background-repeat: repeat-x;
 }
 
