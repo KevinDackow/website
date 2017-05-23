@@ -1,15 +1,16 @@
 .newsfeed {
-   margin: auto;
-   margin-left: 10px;
-   margin-right: 10px;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .newsfeed ul {
-  columns: 4;
-  column-width: auto;
-  list-style-type: none;
-  padding: 0;
+    columns: 4;
+    column-width: auto;
+    list-style-type: none;
+    padding: 0;
 }
 
 .newsfeed ul li {
-   margin: auto;
+    margin: auto;
 }

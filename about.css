@@ -1,13 +1,13 @@
 .aboutMe ul {
-   list-style: none;
-   color: White;
+    list-style: none;
+    color: White;
 }
 
 .aboutMe ul li::before {
-   content: "> ";
-   color: White;
+    content: "> ";
+    color: White;
 }
 
 img {
-   color: White;
+    color: White;
 }
