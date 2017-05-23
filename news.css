@@ -1,5 +1,7 @@
 .newsfeed {
    margin: auto;
+   margin-left: 10px;
+   margin-right: 10px;
 }
 .newsfeed ul {
   columns: 4;
@@ -10,5 +12,4 @@
 
 .newsfeed ul li {
    margin: auto;
-   
 }
