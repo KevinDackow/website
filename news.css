@@ -1,9 +1,12 @@
+.newsfeed {
+   margin: auto;
+}
 .newsfeed ul {
   columns: 4;
   column-width: auto;
   list-style-type: none;
+  padding: 0;
 }
-
 
 .newsfeed ul li {
    margin: auto;
