@@ -40,14 +40,19 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+    position: fixed;
+    top: 0%;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 10%;
 }
 
 .menuBar ul {
-    background-attachment: fixed;
-    background-position: top center;
     list-style-type: none;
     width: 100%;
     padding: 0;
+    margin-top: 0;
     overflow: hidden;
 }
 
@@ -59,7 +64,7 @@ h2 {
     float: left;
     display: block;
     padding: 12px;
-    background-color: Grey;
+    background-color: Green;
     border-right: .5px solid White;
     border-left: .5px solid White;
     color: White;
@@ -68,7 +73,7 @@ h2 {
 }
 
 .menuBar ul li a:hover {
-    background-color: DarkGrey;
+    background-color: Lime;
 }
 
 p {
@@ -86,9 +91,17 @@ html {
     background-attachment: fixed;
 }
 
-body {
+.content {
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.75);
     border: 1px solid Black;
     width: 90%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+body {
+   margin: 0;
+   padding: 0;
 }
