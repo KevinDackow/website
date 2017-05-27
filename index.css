@@ -2,7 +2,6 @@
     box-sizing: border-box;
     text-align: center;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    ;
 }
 
 a {
@@ -75,7 +74,7 @@ h2 {
 }
 
 .menuBar ul li a:hover {
-    background-color: Lime;
+    background-color: DarkGreen;
 }
 
 p {
