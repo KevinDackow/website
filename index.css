@@ -38,6 +38,7 @@ h2 {
 }
 
 .menuBar {
+    z-index: 99999;
     display: block;
     margin-left: auto;
     margin-right: auto;
