@@ -5,24 +5,19 @@
 }
 
 a {
-    color: DodgerBlue;
+    color: Blue;
+    transition-property: color;
+    transition-duration: .5s;
 }
 
-a:active {
-    color: Red;
-}
-
-a:visited {
-    color: Purple;
-}
 
 a:hover {
-    color: Yellow;
+    color: DarkGreen;
 }
 
 h1 {
     margin: auto;
-    color: Green;
+    color: DarkGreen;
     font-size: 32px;
     border-bottom: double;
     border-bottom-width: medium;
@@ -30,7 +25,7 @@ h1 {
 
 h2 {
     margin: auto;
-    color: Green;
+    color: DarkGreen;
     font-size: 24px;
     border-bottom: solid;
     border-bottom-width: thin;
@@ -65,7 +60,9 @@ h2 {
     float: left;
     display: block;
     padding: 12px;
-    background-color: Green;
+    background-color: DarkGreen;
+    transition-property: background;
+    transition-duration: 1s;
     border-right: .5px solid White;
     border-left: .5px solid White;
     color: White;
@@ -75,7 +72,7 @@ h2 {
 }
 
 .menuBar ul li a:hover {
-    background-color: DarkGreen;
+    background-color: rgb(0, 140, 14);
 }
 
 p {
@@ -95,7 +92,7 @@ html {
 
 .content {
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255,255,255, 0.75);
     border: 1px solid Black;
     width: 90%;
     margin-left: auto;
