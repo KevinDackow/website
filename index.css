@@ -63,6 +63,7 @@ h2 {
     background-color: DarkGreen;
     transition-property: background;
     transition-duration: 1s;
+    transition-timing-function: ease-out;
     border-right: .5px solid White;
     border-left: .5px solid White;
     color: White;
