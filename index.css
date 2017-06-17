@@ -61,7 +61,7 @@ h2 {
     display: block;
     padding: 12px;
     background-color: DarkGreen;
-    transition-property: background;
+    transition-property: background, transform;
     transition-duration: 1s;
     transition-timing-function: ease-out;
     border-right: .5px solid White;
@@ -72,8 +72,13 @@ h2 {
     font-size: medium;
 }
 
+.menuBar ul li a:active {
+   transform: scale(1,1);
+}
+
 .menuBar ul li a:hover {
     background-color: rgb(0, 140, 14);
+    transform: scale(1.05,1.05);
 }
 
 p {
