@@ -12,7 +12,11 @@ a {
 
 
 a:hover {
-    color: DarkGreen;
+    color: rgb(0, 140, 14);
+}
+
+a:active {
+    color: red;
 }
 
 h1 {
@@ -20,7 +24,7 @@ h1 {
     color: DarkGreen;
     font-size: 32px;
     border-bottom: double;
-    border-bottom-width: medium;
+    border-bottom-width: thick;
 }
 
 h2 {
@@ -68,13 +72,9 @@ h2 {
     border-right: .5px solid White;
     border-left: .5px solid White;
     color: White;
-    width: 20%;
+    width: 25%;
     text-align: center;
     font-size: medium;
-}
-
-.menuBar ul li a:active {
-   transform: scale(1,1);
 }
 
 .menuBar ul li a:hover {

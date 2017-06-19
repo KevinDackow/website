@@ -3,11 +3,27 @@
     color: White;
 }
 
-.aboutMe ul li::before {
-    content: "> ";
+img {
     color: White;
 }
 
-img {
-    color: White;
+.content ul { 
+   list-style-type: none;
+   padding: 0;
+}
+
+.bulletedUL ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+.bulletedUL ul li {
+    text-align: left;
+}
+
+.experienceBox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
