@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <title>Kevin Dackow</title>
 </head>
 
 <body>
-    <div class="menuBar">
+    <div id="menuBar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -21,6 +21,14 @@
         <h1>Welcome to Kevin Dackow's Website</h1>
         <p>I am a current student at Brown University and am trying to get experience in Open Source coding and web design. This is my attempt at the latter. Feel free to contact me with any inquiries or information.</p>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-u4v7V3HlVnta0ldT0Szr_GVuhWzLh8QSWxYGDzK9YCWs0w/viewform?embedded=true" width=80% height=500 frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <form action="/action.html" method="get" id="test_form">
+            <ul>
+                <li>First Name: <input type="text" id="firstName"></li>
+                <li>Last Name: <input type="text" id="lastName"></li>
+                <li><input type="submit" id="btnNames"></li>
+            </ul>
+        </form>
     </div>
+    <script src="/script.js"></script>
 </body>
 </html>
