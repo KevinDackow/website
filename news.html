@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="news.css">
+    <script src="news.js" type="text/javascript">
+    </script>
     <title>News</title>
 </head>
 
@@ -20,20 +22,36 @@
     </div>
     <div class="content">
         <h1>Current News.</h1>
-        <p>I try to browse diverse news sources, so I have attempted to include sources with a variety of partisan leanings to balance my news intake. For best results use a PC. </p>
+        <p>This page is designed to give users the ability to compare the Twitter feeds of various, diverse news sources at the same time. Future implementations hope to allow sorting based on keywords and specific topics!</p>
+        <input type="checkbox" name="check" onclick="showMe('newsfeedNYT')">The New York Times
+        <input type="checkbox" name="check" onclick="showMe('newsfeedWSJ')">The Wall Street Journal
+        <input type="checkbox" name="check" onclick="showMe('newsfeedWP')">The Washington Post
+        <input type="checkbox" name="check" onclick="showMe('newsfeedECON')">The Economist
         <div class="newsfeed">
             <ul>
-                <li><a class="twitter-timeline" href="https://twitter.com/nytimes">NYTimes</a>
-                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <li>
+                    <div class="twitterfeed" id="newsfeedNYT">
+                        <a class="twitter-timeline" href="https://twitter.com/nytimes">NYTimes</a>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
                 </li>
-                <li><a class="twitter-timeline" href="https://twitter.com/WSJ">WSJ</a>
-                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <li>
+                    <div class="twitterfeed" id="newsfeedWSJ">
+                        <a class="twitter-timeline" href="https://twitter.com/WSJ">WSJ</a>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
                 </li>
-                <li><a class="twitter-timeline" href="https://twitter.com/TheEconomist">The Economist</a>
-                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <li>
+                    <div class="twitterfeed" id="newsfeedECON">
+                        <a class="twitter-timeline" href="https://twitter.com/TheEconomist">The Economist</a>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
                 </li>
-                <li><a class="twitter-timeline" href="https://twitter.com/washingtonpost">Washington Post</a>
-                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <li>
+                    <div class="twitterfeed" id="newsfeedWP">
+                        <a class="twitter-timeline" href="https://twitter.com/washingtonpost">Washington Post</a>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
                 </li>
             </ul>
         </div>
