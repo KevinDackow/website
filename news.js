@@ -1,11 +1,7 @@
-function showMe (box) {
-    var chboxs = document.getElementsByName("check");
+function showMe(checkbox, newsfeed) {
     var vis = "none";
-    for(var i=0;i<chboxs.length;i++){
-        if(chboxs[i].checked){
-            vis = "block";
-                break;
-        }
+    if(checkbox.checked){
+        vis = "block";
     }
-    document.getElementById(box).style.display = vis;
+    document.getElementById(newsfeed).style.display = vis;
 }

@@ -23,10 +23,10 @@
     <div class="content">
         <h1>Current News.</h1>
         <p>This page is designed to give users the ability to compare the Twitter feeds of various, diverse news sources at the same time. Future implementations hope to allow sorting based on keywords and specific topics!</p>
-        <input type="checkbox" name="check" onclick="showMe('newsfeedNYT')">The New York Times
-        <input type="checkbox" name="check" onclick="showMe('newsfeedWSJ')">The Wall Street Journal
-        <input type="checkbox" name="check" onclick="showMe('newsfeedWP')">The Washington Post
-        <input type="checkbox" name="check" onclick="showMe('newsfeedECON')">The Economist
+        <input type="checkbox" name="newsSource" onclick="showMe(this, 'newsfeedNYT')">The New York Times
+        <input type="checkbox" name="newsSource" onclick="showMe(this, 'newsfeedWSJ')">The Wall Street Journal
+        <input type="checkbox" name="newsSource" onclick="showMe(this, 'newsfeedWP')">The Washington Post
+        <input type="checkbox" name="newsSource" onclick="showMe(this, 'newsfeedECON')">The Economist
         <div class="newsfeed">
             <ul>
                 <li>
