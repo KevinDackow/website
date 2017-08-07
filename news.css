@@ -14,3 +14,7 @@
 .newsfeed ul li {
     margin: auto;
 }
+
+.newsfeed ul li .twitterfeed {
+    display: none;
+}
