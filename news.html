@@ -1,65 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="news.css">
+        <script src="news.js" type="text/javascript">
+        </script>
+        <title>News</title>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="news.css">
-    <script src="news.js" type="text/javascript">
-    </script>
-    <title>News</title>
-</head>
-
-<body>
-    <div id="menuBar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="music.html">Music</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <h1>Current News.</h1>
-        <p>This page is designed to give users the ability to compare the Twitter feeds of various, diverse news sources at the same time. Future implementations hope to allow sorting based on keywords and specific topics!</p>
-        <!--show and hide all buttons -->
-        <input type="button" id="showAll" onclick="showAll()" value="Show All">
-        <input type="button" id="hideAll" onclick="hideAll()" value="Hide All">
-        <!-- The checkboxes for the newsSources-->
-        <input type="checkbox" name="newsSource" onclick="feedChecker(this, 'newsfeedNYT')">The New York Times
-        <input type="checkbox" name="newsSource" onclick="feedChecker(this, 'newsfeedWSJ')">The Wall Street Journal
-        <input type="checkbox" name="newsSource" onclick="feedChecker(this, 'newsfeedWP')">The Washington Post
-        <input type="checkbox" name="newsSource" onclick="feedChecker(this, 'newsfeedECON')">The Economist
-        <div class="newsfeed" id="newsfeed">
+    <body>
+        <div id="menuBar">
             <ul>
-                <li>
-                    <div class="twitterfeed" id="newsfeedNYT">
-                        <a class="twitter-timeline" href="https://twitter.com/nytimes">NYTimes</a>
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                </li>
-                <li>
-                    <div class="twitterfeed" id="newsfeedWSJ">
-                        <a class="twitter-timeline" href="https://twitter.com/WSJ">WSJ</a>
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                </li>
-                <li>
-                    <div class="twitterfeed" id="newsfeedECON">
-                        <a class="twitter-timeline" href="https://twitter.com/TheEconomist">The Economist</a>
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                </li>
-                <li>
-                    <div class="twitterfeed" id="newsfeedWP">
-                        <a class="twitter-timeline" href="https://twitter.com/washingtonpost">Washington Post</a>
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="music.html">Music</a></li>
             </ul>
         </div>
-    </div>
-</body>
+        <div class="content">
+            <h1>Current News</h1>
+            <div id="newsIconBar">
+                <ul>
+                    <!--                    NYT icon-->
+                    <li>
+                        <img src="http://www.le-diplomatefrance.com/wp-content/uploads/2016/01/NYT.png" onclick="feedChecker(this, 'newsfeedNYT')"/>
+                    </li>
+                    <!--                    WSJ Icon-->
+                    <li>
+                        <img src="http://www.wsj.com/favicon.ico" onclick="feedChecker(this, 'newsfeedWSJ')"/>
+                    </li>
+                    <!--                    Economist Icon-->
+                    <li>
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/54/89/c9/5489c913-8504-f840-d62b-9769fa459750/source/256x256bb.jpg" onclick="feedChecker(this, 'newsfeedECON')"/>
+                    </li>
+                    <!--                    Wash Post Icon-->
+                    <li>
+                        <img src="http://mauryelementary.com/wp-content/uploads/2014/11/wp.png" onclick="feedChecker(this, 'newsfeedWP')"/>
+                    </li>
+                    <!--                    Reuters Icon-->
+                    <li>
+                        <img src="http://insideevs.com/wp-content/uploads/2013/12/reuters.png" onclick="feedChecker(this, 'newsfeedREUT')"/>
+                    </li>
+                    <!--                    National Review Icon-->
+                    <li>
+                        <img src="http://www.nationalreview.com/sites/default/files/logo_nr_social_2016_600_D.jpg" onclick="feedChecker(this, 'newsfeedNRO')"/>
+                    </li>
+                    <!--                    Financial Times Icon-->
+                    <li>
+                        <img src="https://www.ft.com/__assets/creatives/brand-ft/icons/v2/open-graph.png" onclick="feedChecker(this, 'newsfeedFT')"/>
+                    </li>
+                    <!--                    The Guardian Icon-->
+                    <li>
+                        <img src="https://pbs.twimg.com/profile_images/565178642502651905/2mdFjEwD.png" onclick="feedChecker(this, 'newsfeedGUAR')"/>
+                    </li>
+                    <!--                    NPR Icon-->
+                    <li>
+                        <img src="http://images.fanpop.com/images/image_uploads/NPR-icon-npr-120707_160_160.jpg" onclick="feedChecker(this, 'newsfeedNPR')"/>
+                    </li>
+                    <!--                    BBC Icon-->
+                    <li>
+                        <img src="http://kandl-genres.files.bbci.co.uk/kandl-genres/1199-1/images/meta-images/bbc_blocks.png" onclick="feedChecker(this, 'newsfeedBBC')"/>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- A div that contains all twitterfeeds -->
+            <div class="newsfeed" id="newsfeed">
+                <ul>
+                    <!--                    NYT Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedNYT">
+                            <a class="twitter-timeline" href="https://twitter.com/nytimes">NYTimes</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    WSJ Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedWSJ">
+                            <a class="twitter-timeline" href="https://twitter.com/WSJ">WSJ</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    Economist Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedECON">
+                            <a class="twitter-timeline" href="https://twitter.com/TheEconomist">The Economist</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    Wash Post Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedWP">
+                            <a class="twitter-timeline" href="https://twitter.com/washingtonpost">Washington Post</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    Reuters Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedREUT">
+                            <a class="twitter-timeline" href="https://twitter.com/Reuters">Reuters</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    National Review Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedNRO">
+                            <a class="twitter-timeline" href="https://twitter.com/NRO">National Review</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    Financial Times Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedFT">
+                            <a class="twitter-timeline" href="https://twitter.com/FT">Financial Times</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    The Guardian Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedFT">
+                            <a class="twitter-timeline" href="https://twitter.com/guardian">The Guardian</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    NPR Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedNPR">
+                            <a class="twitter-timeline" href="https://twitter.com/NPR">NPR</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    BBC Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedBBC">
+                            <a class="twitter-timeline" href="https://twitter.com/BBC">BBC</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
 
 </html>

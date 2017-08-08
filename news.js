@@ -1,19 +1,22 @@
 // Determines if feed should be hidden or unhidden and does it
-function feedChecker(checkbox, twitterfeed) {
-    if(checkbox.checked){
-        document.getElementById(twitterfeed).style.display = "block";
+function feedChecker(icon, twitterfeed) {
+    var feed = document.getElementById(twitterfeed);
+    if(feed.style.display == "none"){
+        feed.style.display = "block";
+        icon.style.opacity = 1;
     } else {
-        document.getElementById(twitterfeed).style.display = "none";
+        feed.style.display = "none";
+        icon.style.opacity = .6;
     }
     modifyFeedSizes();
 }
 
 // Modifies the sizes of twitter feeds based on number of open feeds
 function modifyFeedSizes() {
-    var chboxs = document.getElementsByName("newsSource");
+    var feeds = document.getElementsByClassName("twitterfeed");
     var columns = 0;
-    for(i=0;i<chboxs.length;i++){
-        if(chboxs[i].checked){
+    for(i=0;i<feeds.length;i++){
+        if(feeds[i].style.display == "block"){
             columns = columns + 1;
         }
     }

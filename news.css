@@ -15,6 +15,36 @@
     margin: auto;
 }
 
-#newsfeed ul li .twitterfeed {
+.twitterfeed {
     display: none;
+}
+
+#newsIconBar {
+    display: block;
+    width: 640px;
+    height: 64px;
+    margin: auto;
+}
+
+#newsIconBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#newsIconbar ul li {
+    display: inline;
+}
+
+#newsIconBar ul li img {
+    float: left;
+    margin: auto;
+    display: block;
+    height: 64px;
+    width: 64px;
+    opacity: .65;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease; 
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
 }
