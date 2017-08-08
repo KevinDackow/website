@@ -1,7 +1,7 @@
 // Determines if feed should be hidden or unhidden and does it
 function feedChecker(icon, twitterfeed) {
     var feed = document.getElementById(twitterfeed);
-    if(feed.style.display == "none"){
+    if(getComputedStyle(feed, null).display === "none"){
         feed.style.display = "block";
         icon.style.opacity = 1;
     } else {

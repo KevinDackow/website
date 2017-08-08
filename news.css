@@ -42,7 +42,7 @@
     display: block;
     height: 64px;
     width: 64px;
-    opacity: .65;
+    opacity: .6;
     -webkit-transition: opacity .5s ease;
     -moz-transition: opacity .5s ease; 
     -o-transition: opacity .5s ease;
