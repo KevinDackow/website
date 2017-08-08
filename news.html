@@ -19,6 +19,7 @@
                 <li><a href="music.html">Music</a></li>
             </ul>
         </div>
+        <button id="topBtn" onclick="smoothScroll()" title="Go to top">Top</button>
         <div class="content">
             <h1>Current News</h1>
             <div id="newsIconBar">
@@ -27,25 +28,25 @@
                     <li>
                         <img src="http://www.le-diplomatefrance.com/wp-content/uploads/2016/01/NYT.png" onclick="feedChecker(this, 'newsfeedNYT')"/>
                     </li>
-                    <!--                    WSJ Icon-->
-                    <li>
-                        <img src="http://www.wsj.com/favicon.ico" onclick="feedChecker(this, 'newsfeedWSJ')"/>
-                    </li>
                     <!--                    Economist Icon-->
                     <li>
                         <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/54/89/c9/5489c913-8504-f840-d62b-9769fa459750/source/256x256bb.jpg" onclick="feedChecker(this, 'newsfeedECON')"/>
+                    </li>
+                    <!--                    WSJ Icon-->
+                    <li>
+                        <img src="http://www.wsj.com/favicon.ico" onclick="feedChecker(this, 'newsfeedWSJ')"/>
                     </li>
                     <!--                    Wash Post Icon-->
                     <li>
                         <img src="http://mauryelementary.com/wp-content/uploads/2014/11/wp.png" onclick="feedChecker(this, 'newsfeedWP')"/>
                     </li>
+                    <!--                    BBC Icon-->
+                    <li>
+                        <img src="http://kandl-genres.files.bbci.co.uk/kandl-genres/1199-1/images/meta-images/bbc_blocks.png" onclick="feedChecker(this, 'newsfeedBBC')"/>
+                    </li>
                     <!--                    Reuters Icon-->
                     <li>
                         <img src="http://insideevs.com/wp-content/uploads/2013/12/reuters.png" onclick="feedChecker(this, 'newsfeedREUT')"/>
-                    </li>
-                    <!--                    National Review Icon-->
-                    <li>
-                        <img src="http://www.nationalreview.com/sites/default/files/logo_nr_social_2016_600_D.jpg" onclick="feedChecker(this, 'newsfeedNRO')"/>
                     </li>
                     <!--                    Financial Times Icon-->
                     <li>
@@ -59,12 +60,11 @@
                     <li>
                         <img src="http://images.fanpop.com/images/image_uploads/NPR-icon-npr-120707_160_160.jpg" onclick="feedChecker(this, 'newsfeedNPR')"/>
                     </li>
-                    <!--                    BBC Icon-->
+                    <!--                    National Review Icon-->
                     <li>
-                        <img src="http://kandl-genres.files.bbci.co.uk/kandl-genres/1199-1/images/meta-images/bbc_blocks.png" onclick="feedChecker(this, 'newsfeedBBC')"/>
+                        <img src="http://www.nationalreview.com/sites/default/files/logo_nr_social_2016_600_D.jpg" onclick="feedChecker(this, 'newsfeedNRO')"/>
                     </li>
                 </ul>
-
             </div>
             <!-- A div that contains all twitterfeeds -->
             <div class="newsfeed" id="newsfeed">
@@ -76,17 +76,17 @@
                             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </li>
-                    <!--                    WSJ Twitter-->
-                    <li>
-                        <div class="twitterfeed" id="newsfeedWSJ">
-                            <a class="twitter-timeline" href="https://twitter.com/WSJ">WSJ</a>
-                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                    </li>
                     <!--                    Economist Twitter-->
                     <li>
                         <div class="twitterfeed" id="newsfeedECON">
                             <a class="twitter-timeline" href="https://twitter.com/TheEconomist">The Economist</a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </li>
+                    <!--                    WSJ Twitter-->
+                    <li>
+                        <div class="twitterfeed" id="newsfeedWSJ">
+                            <a class="twitter-timeline" href="https://twitter.com/WSJ">WSJ</a>
                             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </li>

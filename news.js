@@ -1,3 +1,44 @@
+//For the scroll to top button
+window.onscroll = function() {scrollFun()};
+
+function scrollFun() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topBtn").style.display = "block";
+    } else {
+        document.getElementById("topBtn").style.display = "none";
+    }
+}
+
+
+function currentYPosition() {
+    // Firefox, Chrome, Opera, Safari
+    if (self.pageYOffset) return self.pageYOffset;
+    // Internet Explorer 6 - standards mode
+    if (document.documentElement && document.documentElement.scrollTop)
+        return document.documentElement.scrollTop;
+    // Internet Explorer 6, 7 and 8
+    if (document.body.scrollTop) return document.body.scrollTop;
+    return 0;
+}
+
+
+function smoothScroll(){
+    var int = setInterval(function(){
+        var y = currentYPosition()
+        if (y == 0) {
+            clearInterval(int);
+        }
+        var dist = currentYPosition()/200;
+        if(dist > 1){
+            window.scrollTo(0, y - dist);
+        } else {
+            window.scrollTo(0, y - 1);
+        }
+    }, 1);
+}
+
+
+
 // Determines if feed should be hidden or unhidden and does it
 function feedChecker(icon, twitterfeed) {
     var feed = document.getElementById(twitterfeed);
