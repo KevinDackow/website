@@ -1,20 +1,20 @@
-.newsfeed {
+#newsfeed {
     margin: auto;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.newsfeed ul {
-    columns: 4;
+#newsfeed ul {
+    columns: 1;
     column-width: auto;
     list-style-type: none;
     padding: 0;
 }
 
-.newsfeed ul li {
+#newsfeed ul li {
     margin: auto;
 }
 
-.newsfeed ul li .twitterfeed {
+#newsfeed ul li .twitterfeed {
     display: none;
 }
