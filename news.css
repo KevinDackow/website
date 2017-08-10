@@ -19,6 +19,44 @@
     display: none;
 }
 
+.dropdownMenu {
+    position: relative;
+    display: inline-block;
+}
+
+#dropDownButton {
+    background-color: DarkGreen;
+    top: 105px;
+    left: 45px;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    z-index: 99;
+    border: medium;
+    border-color: white;
+    position: fixed;
+    padding: 15px;
+    border-radius: 5px; 
+    display: none;
+}
+
+#dropDownButton:hover {
+    background-color: rgb(0, 140, 14);
+}
+
+.dropDownContent {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.show {display:block;}
+
+
 #topBtn {
     display: none;
     position: fixed;
@@ -29,7 +67,6 @@
     border-color: white;
     background-color: DarkGreen;
     color: white;
-    cursor: pointer; 
     padding: 15px;
     border-radius: 5px; 
 }
@@ -42,24 +79,24 @@
     background-color: rgb(0, 75, 0);
 }
 
-#newsIconBar {
+.sideMenu {
     display: block;
     width: 640px;
     height: 64px;
     margin: auto;
 }
 
-#newsIconBar ul {
+.sideMenu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#newsIconbar ul li {
+.sideMenu ul li {
     display: inline;
 }
 
-#newsIconBar ul li img {
+.sideMenu ul li img {
     float: left;
     margin: auto;
     display: block;

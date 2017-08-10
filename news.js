@@ -1,6 +1,11 @@
 //For the scroll to top button
 window.onscroll = function() {scrollFun()};
 
+function dropDown() {
+ document.getElementById("newsfeedDropDown").classList.toggle("show");
+}
+
+//Displays scroll to top button if scrolled below 20 px
 function scrollFun() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("topBtn").style.display = "block";
@@ -9,7 +14,7 @@ function scrollFun() {
     }
 }
 
-
+//Determines the current Y position of the screen as to promote smooth scrolling
 function currentYPosition() {
     // Firefox, Chrome, Opera, Safari
     if (self.pageYOffset) return self.pageYOffset;
@@ -21,7 +26,7 @@ function currentYPosition() {
     return 0;
 }
 
-
+//Smoothly scrolls up to the top of the page
 function smoothScroll(){
     var int = setInterval(function(){
         var y = currentYPosition()
