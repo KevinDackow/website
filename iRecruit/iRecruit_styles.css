@@ -1,0 +1,49 @@
+#headerWrapper, #menuBar {
+    color: black;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    display: inline;
+    height: 800px;
+}
+
+#logo {
+    display: block;
+    float: left;
+}
+
+#slogan {
+    display: block;
+    vertical-align: middle;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#slogan h1 {
+    font-size: 2em;
+    display: inline;
+    font-weight: 500;
+}
+
+#slogan h2 {
+    font-size: 1em;
+    padding: 0;
+    font-weight: 500;
+    line-height: 0px;
+}
+
+#logoutButton {
+    display: block;
+    float: left;
+    background-color: white;
+    border-color: #7f1600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+#header {
+    display: inline-block;
+}
