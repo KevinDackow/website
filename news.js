@@ -1,9 +1,5 @@
 //For the scroll to top button
-window.onscroll = function() {scrollFun()};
-
-function dropDown() {
- document.getElementById("newsfeedDropDown").classList.toggle("show");
-}
+window.onscroll = scrollFun;
 
 //Displays scroll to top button if scrolled below 20 px
 function scrollFun() {
