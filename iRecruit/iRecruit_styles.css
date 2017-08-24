@@ -1,42 +1,56 @@
-#headerWrapper, #menuBar {
+#headerWrapper {
     color: black;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    display: inline;
-    height: 800px;
+    font-family: monaco, Consolas, Lucida Console, monospace;
+    max-height: 85px;
 }
 
 #logo {
-    display: block;
+    /*    padding is only on the right for header items so when it rescales based on window size it is not oddly justified e.g. left pading on an item that now has its own line*/
+    padding-right: 30px;
     float: left;
 }
 
 #slogan {
-    display: block;
-    vertical-align: middle;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*    the height of the logo minus 10px due to 5px of whitespace above and below the image I have been using. If source for logo is changed, make this height the height of the image minus its*/
+    height: 75px;
     float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
 }
 
 #slogan h1 {
+    text-align: center;
     font-size: 2em;
-    display: inline;
     font-weight: 500;
+    line-height: 0px;
+
 }
 
 #slogan h2 {
+    text-align: center;
     font-size: 1em;
     padding: 0;
     font-weight: 500;
     line-height: 0px;
 }
 
+#logoutButtonHolder {
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*    See line 20 for more info */
+    height: 75px;
+    float: right;
+}
+
 #logoutButton {
     display: block;
-    float: left;
     background-color: white;
     border-color: #7f1600;
+    border-style: solid;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -44,6 +58,72 @@
     font-weight: 500;
 }
 
-#header {
-    display: inline-block;
+#navBar {
+    font-family: monaco, Consolas, Lucida Console, monospace;
+    z-index: 99999;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding: 0 0 0 0;
+    width: 100%;
+}
+
+#navBar ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+#navBar ul li {
+    display: inline;
+}
+
+#navBar ul li a {
+    float: left;
+    display: block;
+    padding: 12px;
+    background: gray;
+    -webkit-transition: background .5s ease;
+    -moz-transition: background .5s ease; 
+    -o-transition: background .5s ease;  
+    transition: background .5s ease;
+    border-right: .5px solid White;
+    border-left: .5px solid White;
+    border-top: .5px solid White;
+    border-bottom: .5px solid White;
+    color: White;
+    text-align: center;
+    font-size: medium;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#navBar ul li a:hover {
+    background: darkgrey;
+}
+
+#content {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+body {
+    margin: 0 0 50px;
+}
+
+footer {
+    background-color: white;
+    border-top: thin solid #CACACA;
+    position: fixed;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    height: 25px;
+    border-bottom: thick solid #CACACA;
+}
+
+footer p {
+    font-size: .5em;
 }

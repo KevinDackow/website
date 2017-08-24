@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="iRecruit_styles.css">
+        <link rel="stylesheet" href="Login_Styles.css">
     </head>
     <body>
         <div id="headerWrapper">
@@ -19,11 +20,54 @@
                     <h2>CONTROLLED BY THE ATHLETE AND REWRITTEN BY DATA</h2>
                 </div>
                 <!-- Log out button. TODO for the method of logging out. -->
-                <button id="logoutButton" formmethod="TODO" type="submit" title="logout" ><p>LOG OUT</p></button>
+                <div id="logoutButtonHolder">
+                    <button id="logoutButton" formmethod="TODO" type="submit" title="logout" >LOG OUT</button>
+                </div>
             </header>
-            <!-- navigation bar -->
-            <nav>
-            
-            </nav>
+        </div>
+        <!-- navigation bar -->
+        <nav id="navBar">
+            <!--                Menu Bar items-->
+            <ul>
+                <!--                    TODO fix links when integrating-->
+                <li><a href="iRecruit_Home.html">HOME</a></li>
+                <li><a href="Player_Profile.html">PLAYER PROFILE</a></li>
+                <li><a href="Program_Prefs.html">PROGRAM PREFERENCES</a></li>
+                <li><a href="School_Filters.html">SCHOOL FILTERS</a></li>
+                <li><a href="Search_Results.html">SEARCH RESULTS</a></li>
+                <li><a href="Program_Comparison.html">PROGRAM COMPARISON RESULTS</a></li>
+                <li><a href="Email_Coach.html">EMAIL COLLEGE COACH</a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <div id="login">
+                <h2>USER LOGIN</h2>
+                <!-- TODO Add login functionality -->
+                <form action="TODO">
+                    Username:<br>
+                    <input type="text" name="username">
+                    <br>
+                    Password:<br>
+                    <input type="text" name="password">
+                    <!--                    TODO modify link to proper change password site-->
+                    <br>
+                    <div id="passwordLink">
+                        > <a href="/changePassword.html">Request new password</a>
+                    </div>
+                    <button name="loginButton">Log In</button>
+                </form>
+            </div>
+            <div id="loginPhoto">
+                <!-- image to be displayed -->
+                <img src="https://ssl.c.photoshelter.com/img-get/I0000U_3W6gOGwSU/s/750/750/M1B2010C027.jpg"/>
+                <!-- font to be over image -->
+                <h2><span>"Lorem ipsum dolor <br>sit amet, <br>consectetur <br>adipiscing elit."<br>- Jane Doe</span></h2>
+            </div>
+            <footer id="footer">
+                <p>  &#169; 2017 The iRecruit1440 Application. All Rights Reserved.</p>
+            </footer>
         </div>
     </body>
+
+</html>

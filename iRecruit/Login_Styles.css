@@ -1,0 +1,31 @@
+#login {
+    float: left;
+    padding-right: 100px;
+}
+
+#loginPhoto {
+    position: relative;
+    float: left;
+    box-shadow: 0px 0px 35px #888888;
+}
+
+#loginPhoto img {
+    max-height: 300px;
+    display: block;
+}
+
+#loginPhoto h2 {
+    position: absolute;
+    font-style: italic;
+    top: 0;
+    left: 5px;
+}
+
+#loginPhoto h2 span{
+    color: white;
+    text-shadow:  1px 1px #888888;
+}
+
+#passwordLink {
+    font-size: .7em;
+}
