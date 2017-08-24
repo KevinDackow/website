@@ -90,10 +90,6 @@
     -moz-transition: background .5s ease; 
     -o-transition: background .5s ease;  
     transition: background .5s ease;
-    border-right: .5px solid White;
-    border-left: .5px solid White;
-    border-top: .5px solid White;
-    border-bottom: .5px solid White;
     color: White;
     text-align: center;
     font-size: medium;
