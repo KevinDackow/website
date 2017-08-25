@@ -1,3 +1,7 @@
+* { 
+    box-sizing: border-box;
+}
+
 #headerWrapper {
     padding-left: 20px;
     color: black;
