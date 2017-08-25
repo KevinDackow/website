@@ -1,0 +1,136 @@
+<!-- The Login Page. See TODOs for locations where unimplemented functionality must be inserted (e.g. form actions) -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="iRecruit_styles.css">
+        <link rel="stylesheet" href="School_Filters_styles.css">
+    </head>
+    <body>
+        <div id="headerWrapper">
+            <header id="header">
+                <!-- iRecruit1440 Logo. Currently sourced from dev.iRecruit1440.com -->
+                <img id="logo" src="http://dev.irecruit1440.com/sites/default/files/iRecLogo.png" />
+                <!-- What I assumed was the slogan -->
+                <div id="slogan">
+                    <h1>THE RECRUITING PROCESS</h1>
+                    <h2>CONTROLLED BY THE ATHLETE AND REWRITTEN BY DATA</h2>
+                </div>
+                <!-- Log out button. TODO for the method of logging out. -->
+                <div id="logoutButtonHolder">
+                    <button id="logoutButton" formmethod="TODO" type="submit" title="logout">LOG OUT</button>
+                </div>
+            </header>
+        </div>
+        <!-- navigation bar -->
+        <nav id="navBar">
+            <!--                Menu Bar items-->
+            <ul>
+                <!--                    TODO fix links when integrating-->
+                <li><a href="iRecruit_Home.html">HOME</a></li>
+                <li><a href="Player_Profile.html">PLAYER PROFILE</a></li>
+                <li><a href="Program_Prefs.html">PROGRAM PREFERENCES</a></li>
+                <li><a href="School_Filters.html">SCHOOL FILTERS</a></li>
+                <li><a href="Search_Results.html">SEARCH RESULTS</a></li>
+                <li><a href="Program_Comparison.html">PROGRAM COMPARISON RESULTS</a></li>
+                <li><a href="Email_Coach.html">EMAIL COLLEGE COACH</a></li>
+            </ul>
+        </nav>
+        <div id="content">
+            <h4>CHOOSE SCHOOL PREFERENCES TO FILTER</h4>
+            <div id="preferences">
+                <!-- TODO fix these for fields and what the form does -->
+                <form id=preferencesForm action="TODO">
+                    <h4>REGION</h4>
+                    <select name="region">
+                        <option value="reg1">Region 1</option>
+                        <option value="reg2">Region 2</option>
+                        <option value="reg3">Region 3</option>
+                        <option value="reg4">Region 4</option>
+                        <option value="reg5">Region 5</option>
+                    </select>
+
+                    <h4>STATE</h4>
+                    <select name="STATE">
+                        <option value="state1">State 1</option>
+                        <option value="state2">State 2</option>
+                        <option value="state3">State 3</option>
+                        <option value="state4">State 4</option>
+                        <option value="state5">State 5</option>
+                    </select>
+
+                    <h4>CLASSIFICATION</h4>
+                    <select name="CLASSIFICATION">
+                        <option value="class1">Class 1</option>
+                        <option value="class2">Class 2</option>
+                        <option value="class3">Class 3</option>
+                        <option value="class4">Class 4</option>
+                        <option value="class5">Class 5</option>
+                    </select>
+
+                    <h4>CONFERENCE</h4>
+                    <select name="conference">
+                        <option value="conf1">Conference 1</option>
+                        <option value="conf2">Conference 2</option>
+                        <option value="conf3">Conference 3</option>
+                        <option value="conf4">Conference 4</option>
+                        <option value="conf5">Conference 5</option>
+                    </select>
+
+                    <h4>IN-STATE COST</h4>
+                    <select name="inStateCost">
+                        <option value="isc1">In-State Cost 1</option>
+                        <option value="isc2">In-State Cost 2</option>
+                        <option value="isc3">In-State Cost 3</option>
+                        <option value="isc4">In-State Cost 4</option>
+                        <option value="isc5">In-State Cost 5</option>
+                    </select>
+
+                    <h4>OUT-OF-STATE COST</h4>
+                    <select name="outOfStateCost">
+                        <option value="oosc1">Out-of-State Cost 1</option>
+                        <option value="oosc2">Out-of-State Cost 2</option>
+                        <option value="oosc3">Out-of-State Cost 3</option>
+                        <option value="oosc4">Out-of-State Cost 4</option>
+                        <option value="oosc5">Out-of-State Cost 5</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="searchResults">
+                <h4>PROGRAM COMPARISON RESULTS</h4>
+                <div class="resultBox">
+                    <div class="leftMostItems">
+                        <div class="collegeLogoHolder">
+                            <!-- TODO populate this img with college logo -->
+                            <img src="http://content.sportslogos.net/logos/30/623/full/2440.gif"/>
+                        </div>
+                        <div class="collegeDivisionAndConferenceHolder">
+                            <!-- TODO populate this h1 with college division field -->
+                            <div class="collegeDivision">
+                                <h1>D1 Program</h1>
+                            </div>
+                            <!-- TODO populate this h1 with college conference field -->
+                            <div class="collegeConference">
+                                <h1>Ivy League Conference</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profilesHolder">
+                        <!-- TODO populate this link with an href to the appropriate academic profile page -->
+                        <div class="academicProfileLinkHolder">
+                            <a class="academicProfileLink" href="TODO">ACADEMIC PROFILE</a>
+                        </div>
+
+                        <!-- TODO populate this link with an href to the appropriate baseball program profile page -->
+                        <div class="baseballProfileLinkHolder">
+                            <a class="baseballProfileLink" href="TODO">BASEBALL PROGRAM PROFILE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

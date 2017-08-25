@@ -1,0 +1,69 @@
+.content {
+    height=100%;
+}
+
+#preferences {
+    float: left;
+}
+
+#preferencesForm {
+    padding-left: 20px;
+}
+#preferencesForm h4 {
+    line-height: 0;
+    margin-bottom: 10px;
+}
+
+#preferencesForm select {
+    background-color: #F7F7F7;
+}
+
+.searchResults {
+    float: left;
+    padding-left: 5%;
+    padding-bottom: 100%;
+    width: 60%;
+    height: 100%;
+}
+
+.resultBox {
+    position: relative;
+    height: 100px;
+    width: 450px;
+    border: medium solid #888888;
+}
+.leftMostItems {
+    position: absolute;
+    left: 0;
+    width: 20%;
+}
+
+.collegeLogoHolder {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    float: left;
+}
+.collegeLogoHolder img {
+    max-width: 100%;
+}
+
+.collegeDivision h1, .collegeConference h1 {
+    font-size: 40%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.profilesHolder {
+    position: absolute;
+    left: 27%;
+}
+
+
+.baseballProfileLinkHolder, .academicProfileLinkHolder {
+    float: left;
+    font-size: 50%;
+    display: inline;
+}
