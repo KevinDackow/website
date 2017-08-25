@@ -1,4 +1,5 @@
 #headerWrapper {
+    padding-left: 20px;
     color: black;
     font-family: monaco, Consolas, Lucida Console, monospace;
     max-height: 85px;
@@ -25,7 +26,7 @@
     font-size: 2em;
     font-weight: 500;
     line-height: 0px;
-
+    padding: 0;
 }
 
 #slogan h2 {
@@ -72,9 +73,9 @@
 #navBar ul {
     list-style-type: none;
     width: 100%;
-    padding: 0;
     margin-top: 0;
     overflow: hidden;
+    background-color: gray;
 }
 
 #navBar ul li {
@@ -114,10 +115,11 @@ footer {
     border-top: thin solid #CACACA;
     position: fixed;
     left: 0;
-    bottom: 15px;
+    bottom: 0px;
     width: 100%;
     height: 25px;
     border-bottom: thick solid #CACACA;
+    padding-left: 20px;
 }
 
 footer p {
