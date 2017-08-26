@@ -98,11 +98,10 @@
                     </select>
                 </form>
             </div>
-
+            <h4>PROGRAM COMPARISON RESULTS</h4>
             <div class="searchResults">
-                <h4>PROGRAM COMPARISON RESULTS</h4>
                 <div class="resultBox">
-                    <div class="leftMostItems">
+                    <div class="collegeLogoandConference">
                         <div class="collegeLogoHolder">
                             <!-- TODO populate this img with college logo -->
                             <img src="http://content.sportslogos.net/logos/30/623/full/2440.gif"/>
@@ -119,18 +118,43 @@
                         </div>
                     </div>
                     <div class="profilesHolder">
-                        <!-- TODO populate this link with an href to the appropriate academic profile page -->
-                        <div class="academicProfileLinkHolder">
-                            <a class="academicProfileLink" href="TODO">ACADEMIC PROFILE</a>
+                        <!-- TODO populate this button with a redirect to the appropriate academic profile page -->
+                        <div class="academicProfileHolder">
+                            <button class="academicProfileButton" action="TODO">Academic Profile<br><div class="clickHereText">(Click Here To View)</div></button>
                         </div>
-
-                        <!-- TODO populate this link with an href to the appropriate baseball program profile page -->
-                        <div class="baseballProfileLinkHolder">
-                            <a class="baseballProfileLink" href="TODO">BASEBALL PROGRAM PROFILE</a>
+                        <!-- TODO populate this button with a redirect to the appropriate baseball program profile page -->
+                        <div class="baseballProfileHolder">
+                            <button class="baseballProfileButton" action="TODO">Baseball Program Profile<br><div class="clickHereText">(Click Here To View)</div></button>
+                        </div>
+                    </div>
+                    <!-- TODO Add functionality to these buttons -->
+                    <div class="resultChoices">
+                        <button class="resultChoiceButton" id="compareProgramsButton"></button>
+                        <div class="resultChoiceText" id="compareProgramsText"><p>COMPARE PROGRAMS</p>
+                        </div>
+                        <button class="resultChoiceButton" id="saveAsFavoriteButton"></button>
+                        <div class="resultChoiceText" id="saveAsFavoriteText">
+                            <p>SAVE AS FAVORITE</p>
+                        </div>
+                        <button class="resultChoiceButton" id="emailCoachButton">
+                        </button>
+                        <div class="resultChoiceText" id="emailCoachText">
+                            <p>EMAIL COACH</p>
+                        </div>
+                    </div>
+                    <div id=schoolRankings>
+                        <div class="schoolRanking" id="schoolRankOne">
+                            <span>45</span>
+                        </div>
+                        <div class="schoolRanking" id="schoolRankTwo">
+                            <span>20</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <footer id="footer">
+            <p>  &#169; 2017 The iRecruit1440 Application. All Rights Reserved.</p>
+        </footer>
     </body>
 </html>
