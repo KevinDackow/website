@@ -101,6 +101,20 @@ html, body, #content {
     font-variant: small-caps;
     font-weight: 600; background-color: white;
     border: thin solid black;
+    -webkit-transition: background-color .25s ease, color .25s ease;
+    -moz-transition: background-color .25s ease, color .25s ease;
+    -o-transition: background-color .25s ease, color .25s ease;
+    transition: background-color .25s ease, color .25s ease;
+}
+
+.baseballProfileButton:hover, .academicProfileButton:hover {
+    background-color: #7f1600;
+    color: white;
+}
+
+.baseballProfileButton:active, .academicProfileButton:active {
+    background-color: darkred;
+    color: white;
 }
 
 .clickHereText {
@@ -127,6 +141,9 @@ html, body, #content {
     border: thick solid #7f1600;
     z-index: 10;
     transition: background-color .25s ease;
+    -webkit-transition: background-color .25s ease;
+    -moz-transition: background-color .25s ease;
+    -o-transition: background-color .25s ease;
 }
 
 .resultChoiceButton:hover {
