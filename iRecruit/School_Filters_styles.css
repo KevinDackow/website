@@ -1,9 +1,12 @@
 html, body, #content {
     height: 100%;
+    width: 100%;
+    position: relative;
 }
 
 #preferences {
-    float: left;
+    position: absolute;
+    left: 0%;
 }
 
 #preferencesForm {
@@ -18,6 +21,11 @@ html, body, #content {
     background-color: #F7F7F7;
 }
 
+#programCompRes {
+    position: absolute;
+    left: 190px;
+}
+
 .searchResults {
     font-family: monaco, Consolas, Lucida Console, monospace;
     float: left;
@@ -25,6 +33,9 @@ html, body, #content {
     padding-top
     width: 60%;
     height: 100%;
+    position: absolute;
+    left: 175px;
+    top: 100px;
 }
 
 /*To set size of box edit the min-height and min-width here. */
