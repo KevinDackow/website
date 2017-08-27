@@ -99,8 +99,9 @@ html, body, #content {
     padding-bottom: 2px;
     width: 100%;
     font-variant: small-caps;
-    font-weight: 600; background-color: white;
-    border: thin solid black;
+    font-weight: 600; 
+    background-color: white;
+    border: medium solid #7f1600;
     -webkit-transition: background-color .25s ease, color .25s ease;
     -moz-transition: background-color .25s ease, color .25s ease;
     -o-transition: background-color .25s ease, color .25s ease;
@@ -108,12 +109,12 @@ html, body, #content {
 }
 
 .baseballProfileButton:hover, .academicProfileButton:hover {
-    background-color: #7f1600;
+    background-color: indianred;
     color: white;
 }
 
 .baseballProfileButton:active, .academicProfileButton:active {
-    background-color: indianred;
+    background-color: #7f1600;
     color: white;
 }
 
@@ -151,7 +152,7 @@ html, body, #content {
 }
 
 .resultChoiceButton:active {
-    background-color: red;
+    background-color: #7f1600;
 }
 
 .resultChoiceText {
