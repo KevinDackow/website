@@ -27,12 +27,10 @@ html, body, #content {
     height: 100%;
 }
 
+/*To set size of box edit the min-height and min-width here. */
 .resultBox {
-    max-height: 150px;
-    max-width: 600px; 
-    height: 20%;
-    min-height: 75px;
-    min-width: 400px;
+    min-height: 125px;
+    min-width: 600px;
     position: relative;
     width: 100%;
     border: medium solid #888888;
