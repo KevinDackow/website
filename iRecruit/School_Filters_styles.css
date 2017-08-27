@@ -5,8 +5,7 @@ html, body, #content {
 }
 
 #preferences {
-    position: absolute;
-    left: 0%;
+    float: left;
 }
 
 #preferencesForm {
@@ -22,20 +21,14 @@ html, body, #content {
 }
 
 #programCompRes {
-    position: absolute;
-    left: 190px;
+    width: 500px;
 }
 
 .searchResults {
     font-family: monaco, Consolas, Lucida Console, monospace;
     float: left;
-    padding-left: 5%;
-    padding-top
-    width: 60%;
-    height: 100%;
-    position: absolute;
-    left: 175px;
-    top: 100px;
+    padding-left: 150px;
+    width: 650px;
 }
 
 /*To set size of box edit the min-height and min-width here. */
@@ -227,5 +220,3 @@ html, body, #content {
     background-color: darkgray;
     box-shadow: 0px 1px 50px #888888;
 }
-
-

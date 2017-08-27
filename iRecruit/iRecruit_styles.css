@@ -131,3 +131,54 @@ footer {
 footer p {
     font-size: .5em;
 }
+
+
+.CompareAndFavorites {
+    background-color: white;
+    float: left;
+    padding-left: 250px;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.CompareAndFavorites h2 {
+    font-size: 1em;
+}
+
+.CompareFaveTable, .CompareFaveTable td {
+    border: thin solid #888888;
+    border-collapse: collapse;
+}
+
+.School_and_Remove  {
+    border-collapse: collapse;
+    border-color: white;
+    background-color: midnightblue;
+    color: white;
+    text-align: left;
+}
+
+.CompareFaveTable td {
+    font-size: .85em;
+}
+
+.CompareFaveTable th, .CompareFaveTable td {
+   padding: 5px; 
+}
+
+.CompareFaveTable a {
+    color: #36aad5;
+    text-decoration: none
+}
+
+.SchoolTableHeader, .RemoveTableHeader {
+    font-size: .95em;
+}
+
+.SchoolTableHeader, .schoolName {
+    width: 110px;
+}
+
+.RemoveTableHeader {
+    width: 50px;
+}
