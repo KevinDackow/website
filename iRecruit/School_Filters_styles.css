@@ -126,6 +126,7 @@ html, body, #content {
     background-color: white;
     border: thick solid #7f1600;
     z-index: 10;
+    transition: background-color .25s ease;
 }
 
 .resultChoiceButton:hover {
