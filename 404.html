@@ -27,7 +27,7 @@
       anyActive = false;
       for (var i in navs) {
         var l = navs.item(i);
-        if (l.href.endsWith(path + "/")) {
+        if (l.href.endsWith(path)) {
           $(l).addClass("active");
           anyActive = true;
         } else {
