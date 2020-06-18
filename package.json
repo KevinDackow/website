@@ -19,7 +19,7 @@
     "@angular/platform-browser": "^9.0.0",
     "@angular/platform-browser-dynamic": "^9.0.0",
     "@angular/router": "^9.0.0",
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "ng-particle": "^1.0.10",
